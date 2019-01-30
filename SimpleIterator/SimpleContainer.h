@@ -13,6 +13,7 @@ private:
 
 public:
 	explicit TSimpleContainer(size_t capacity = 0);
+	~TSimpleContainer();
 
 	size_t GetCapacity() const;
 	size_t GetSize() const;
@@ -35,6 +36,17 @@ TSimpleContainer<T>::TSimpleContainer(size_t capacity) :
 	m_size{ 0 }
 {
 
+}
+
+template <typename T>
+TSimpleContainer<T>::~TSimpleContainer()
+{
+	delete[] m_pBuffer;
+	
+	m_pBuffer = 0;
+	
+	m_capacity = 0;
+	m_size = 0;
 }
 
 template <typename T>

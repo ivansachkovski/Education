@@ -12,7 +12,7 @@ int main()
 		printf("%d ", value);
 	}
 
-	_getch();
+	int in = _getch();
 
 	return 0;
 }
