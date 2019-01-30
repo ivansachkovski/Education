@@ -1,5 +1,7 @@
 #pragma once
 
+#include <iterator>
+
 template <typename T>
 class TSimpleIterator:
 	public std::iterator<std::input_iterator_tag, T>

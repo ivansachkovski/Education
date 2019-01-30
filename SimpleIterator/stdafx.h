@@ -1,8 +1,8 @@
 #pragma once
 
-#include <iterator>
 #include <memory>
-#include <vector>
+#include <algorithm>
+#include <initializer_list>
 
 #include "SimpleIterator.h"
 #include "SimpleContainer.h"

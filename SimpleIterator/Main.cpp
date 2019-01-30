@@ -4,11 +4,8 @@
 
 int main() 
 {
-	TSimpleContainer<int> container(10);
-	container.Insert(10);
-	container.Insert(5);
-	container.Insert(9);
-	container.Insert(7);
+	TSimpleContainer<int> container;
+	container.Insert({ 10, 5, 2, 51 });
 
 	for (int value : container)
 	{
