@@ -1,6 +1,6 @@
 #include "pch.h"
 
-TEST(SimpleContainer, MemoryAllocatorEmpty) {
+TEST(SimpleContainer, DISABLED_MemoryAllocatorEmpty) {
 	TSimpleContainer<int> container;
 	EXPECT_EQ(0, container.GetCapacity());
 	EXPECT_EQ(0, container.GetSize());
